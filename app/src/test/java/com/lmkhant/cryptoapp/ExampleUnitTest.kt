@@ -12,6 +12,14 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+        var _coin = mutableListOf("btc", "eth", "pel", "mat")
+        val coin = _coin
+
+        print(coin)
+        _coin = _coin.filter { it.contains("e") }.toMutableList()
+
+        print(coin)
+
+
     }
 }
